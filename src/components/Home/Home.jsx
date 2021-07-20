@@ -10,6 +10,7 @@ export default function Home() {
     const user = useSelector((store) => store.user);
 
     // If user is a client, show client Pyramid at /home
+    // authorization level 3
     if (user.authorization === 3) {
         return (
             <>
@@ -20,6 +21,7 @@ export default function Home() {
     }
 
     // If user is a coach, show coach dashboard at /home
+    // authorization level 2
     if (user.authorization === 2) {
         return (
             <>
@@ -30,6 +32,7 @@ export default function Home() {
     }
 
     // If user is an admin, show admin dashboard at /home
+    // authorization level 1
     if (user.authorization === 1) {
         return (
             <>
