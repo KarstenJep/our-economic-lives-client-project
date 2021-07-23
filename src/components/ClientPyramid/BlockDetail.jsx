@@ -57,6 +57,7 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
 
+  // This is the block detail component
 export default function BlockDetail() {
 
     const classes = useStyles();

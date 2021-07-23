@@ -46,6 +46,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
+// this is the client profile component
 export default function Profile() {
     const classes = useStyles();
     const history = useHistory();
